@@ -11,8 +11,8 @@
     <nav>
         <h1>Company</h1>
         <div class="nav--menu">
-            <a class="menuBtn">Menu</a>
-            <div class="dropdown">
+            <a class="menuBtn" data-dropdownBtn="one">Menu</a>
+            <div class="dropdown" data-dropdownCont="one">
             <ul class="nav-items-dropdown">
                 <li class="nav--item">Home</li>
                 <li class="nav--item">Blog</li>
@@ -21,6 +21,17 @@
             </ul>
         </div>
     </nav>
+
+    <div class="nav--menu">
+        <a class="menuBtn" data-dropdownBtn="two">tds</a>
+        <div class="dropdown" data-dropdownCont="two">
+        <ul class="nav-items-dropdown">
+            <li class="nav--item">Home</li>
+            <li class="nav--item">Blog</li>
+            <li class="nav--item">About</li>
+        </div>
+        </ul>
+    </div>
 
     <script src="script.js"></script>
 </body>

@@ -1,7 +1,10 @@
-const dropDownBtn = document.querySelector('.menuBtn');
-const dropdownContainer = document.querySelector('.dropdown');
+const dropDownBtns = document.querySelectorAll('.menuBtn');
+const dropdownContainers = document.querySelectorAll('.dropdown');
 
-dropDownBtn.addEventListener('click', (e) => {
-    dropdownContainer.classList.toggle('visible');
-    dropDownBtn.classList.toggle('active')
-})
+dropDownBtns.forEach(dropdownBtn => {
+    dropdownBtn.addEventListener('click', (e) => {
+        const dropdownID = e.currentTarget.dataset.dropdownbtn;
+        const dropdownContainer = document.querySelector(`.dropdown[data-dropdownCont="${dropdownID}"`);
+        dropdownContainer.classList.toggle('visible');
+    })
+});
