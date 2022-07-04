@@ -1,0 +1,48 @@
+body {
+    font-family: sans-serif;
+}
+
+nav {
+    margin: 0 auto;
+    max-width: 90%;
+    display: flex;
+    padding: 10px 20px;
+}
+
+
+
+.nav--menu {
+    margin-left: auto;
+    display: flex;
+    align-items: center;
+    justify-content: right;
+}
+
+.menuBtn {
+    text-transform: uppercase;
+    cursor: pointer;
+    margin: 0;
+
+}
+
+.active {
+    opacity: 0.3;
+}
+
+.nav-items-dropdown  {
+    display: flex;
+    list-style: none;
+    margin: 0;
+}
+
+.dropdown {
+    display: none;
+}
+
+.visible {
+    display: block;
+}
+
+.nav--item {
+    margin-left: 15px;
+}
